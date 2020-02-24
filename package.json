@@ -1,0 +1,22 @@
+{
+  "name": "ehr",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "express-fileupload": "^1.1.6",
+    "express-session": "^1.17.0",
+    "fs": "0.0.1-security",
+    "http-errors": "~1.6.2",
+    "ipfs-api": "^26.1.2",
+    "morgan": "~1.9.0",
+    "nodemailer": "^6.4.3",
+    "web3": "^1.2.6"
+  }
+}

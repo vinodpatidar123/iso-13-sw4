@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cryptoctor</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://designrevision.com/demo/shards/extra/css/shards.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4"><img src="https://designrevision.com/demo/shards/extra/images/agency-landing/shards-logo-white.svg"
+    alt="Example Navbar 1" class="mr-2" height="30"> <a class="navbar-brand" href="/">Cryptoctor</a> <button
+    class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-1"
+    aria-controls="navbarNavDropdown-1" aria-expanded="false" aria-label="Toggle navigation"><span
+      class="navbar-toggler-icon"></span></button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown-1">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="hospital">Hospital</a></li>
+      <li class="nav-item"><a class="nav-link" href="doctor">Doctor</a></li>
+      <li class="nav-item"><a class="nav-link" href="patient">Patient</a></li>
+    </ul>
+
+  </div>
+</nav>
+  <div class="contact section-invert py-4">
+    <h3 class="section-title text-center m-5">Register Patient</h3>
+    <div class="container py-4">
+      <div class="row justify-content-md-center px-4">
+        <div class="contact-form col-sm-12 col-md-10 col-lg-7 p-4 mb-4 card">
+          <form action="patient/setPatient" method="POST">
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                  <label for="contactFormFullName">Full Name</label>
+                  <input type="text" class="form-control" id="contactFormFullName" name="name" placeholder="Enter your full name">
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                  <label for="contactFormEmail">Email address</label>
+                  <input type="email" class="form-control" id="contactFormEmail" name="email" placeholder="Enter your email address">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                  <label for="contactFormEmail">Phone Number</label>
+                  <input type="number" class="form-control" id="contactFormEmail" name="phone"
+                    placeholder="Enter your email address">
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                  <label for="contactFormFullName">Date Of Birth</label>
+                  <input type="date" class="form-control" id="contactFormFullName" name="dob" placeholder="Enter your full name">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                  <label for="contactFormFullName">Gender</label><br>
+                  <select
+                    class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
+                    name="gender" required>
+                    <option value="">Select a Gender</option>
+                    <option value="0">Male</option>
+                    <option value="1">Female</option>
+                    <option value="2">Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                  <label for="contactFormEmail">Address</label>
+                  <input type="text" class="form-control" id="contactFormEmail" name="addrs" placeholder="Enter your email address">
+                </div>
+              </div>
+            </div>
+            <input class="btn btn-primary btn-pill d-flex ml-auto mr-auto" type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <script src="js/shards.min.js"></script>
+</body>
+
+</html>
